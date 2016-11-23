@@ -25,4 +25,12 @@
         </plugins>
     </build>
 
+    <!-- This section is necessary for multimodule projects to run site:stage or site:deploy -->
+    <distributionManagement>
+        <site>
+            <id>${project.artifactId}-site</id>
+            <url>http://example.com/maven-markdown/</url>
+        </site>
+    </distributionManagement>
+
 </project>
